@@ -111,7 +111,7 @@ public class DriveSubsystem extends SubsystemBase {
 		brakeOrCoastMotors(values[0] == 0.0, values[1] == 0.0);
 	}
 
-	public void tankDrive(double leftValue, double rightValue){
+	public void tankDrive(double leftValue, double rightValue) {
 		robotDrive.tankDrive(leftValue, rightValue);
 	}
 	
