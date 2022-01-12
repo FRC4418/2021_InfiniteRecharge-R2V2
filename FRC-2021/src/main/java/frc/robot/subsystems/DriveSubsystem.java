@@ -13,7 +13,9 @@ import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 // import edu.wpi.first.wpilibj.simulation.DriverStationSim;
 
 import com.ctre.phoenix.motorcontrol.ControlMode;
+import com.ctre.phoenix.motorcontrol.InvertType;
 import com.ctre.phoenix.motorcontrol.NeutralMode;
+import com.ctre.phoenix.motorcontrol.TalonFXInvertType;
 // import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonFX;
 
@@ -46,6 +48,16 @@ public class DriveSubsystem extends SubsystemBase {
 
 		leftDriveMotorB.follow(leftDriveMotorA);
 		rightDriveMotorB.follow(rightDriveMotorA);
+
+		/* [3] flip values so robot moves forward when stick-forward/LEDs-green */
+        leftDriveMotorA.setInverted(TalonFXInvertType.CounterClockwise); // !< Update this
+        rightDriveMotorA.setInverted(TalonFXInvertType.CounterClockwise); // !< Update this
+
+        /*
+         * set the invert of the followers to match their respective master controllers
+         */
+        leftDriveMotorB.setInverted(InvertType.FollowMaster);
+        rightDriveMotorB.setInverted(InvertType.FollowMaster);
 
 		leftDriveMotorA.configFactoryDefault();
 		leftDriveMotorB.configFactoryDefault();
