@@ -47,6 +47,11 @@ public class DriveSubsystem extends SubsystemBase {
 		leftDriveMotorB.follow(leftDriveMotorA);
 		rightDriveMotorB.follow(rightDriveMotorA);
 
+		leftDriveMotorA.configFactoryDefault();
+		leftDriveMotorB.configFactoryDefault();
+		rightDriveMotorA.configFactoryDefault();
+		rightDriveMotorB.configFactoryDefault();
+
 		// ----------------------------------------------------------
 
 		// Drive system
