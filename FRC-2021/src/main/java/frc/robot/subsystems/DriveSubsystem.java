@@ -52,6 +52,16 @@ public class DriveSubsystem extends SubsystemBase {
 		rightDriveMotorA.configFactoryDefault();
 		rightDriveMotorB.configFactoryDefault();
 
+		leftDriveMotorA.config_kF(Constants.Drive.PID.kPIDLoopIdx, Constants.Drive.PID.kGains_Velocit.kF, Constants.Drive.PID.kTimeoutMs);
+		leftDriveMotorA.config_kP(Constants.Drive.PID.kPIDLoopIdx, Constants.Drive.PID.kGains_Velocit.kP, Constants.Drive.PID.kTimeoutMs);
+		leftDriveMotorA.config_kI(Constants.Drive.PID.kPIDLoopIdx, Constants.Drive.PID.kGains_Velocit.kI, Constants.Drive.PID.kTimeoutMs);
+        leftDriveMotorA.config_kD(Constants.Drive.PID.kPIDLoopIdx, Constants.Drive.PID.kGains_Velocit.kD, Constants.Drive.PID.kTimeoutMs);
+
+		rightDriveMotorA.config_kF(Constants.Drive.PID.kPIDLoopIdx, Constants.Drive.PID.kGains_Velocit.kF, Constants.Drive.PID.kTimeoutMs);
+		rightDriveMotorA.config_kP(Constants.Drive.PID.kPIDLoopIdx, Constants.Drive.PID.kGains_Velocit.kP, Constants.Drive.PID.kTimeoutMs);
+		rightDriveMotorA.config_kI(Constants.Drive.PID.kPIDLoopIdx, Constants.Drive.PID.kGains_Velocit.kI, Constants.Drive.PID.kTimeoutMs);
+        rightDriveMotorA.config_kD(Constants.Drive.PID.kPIDLoopIdx, Constants.Drive.PID.kGains_Velocit.kD, Constants.Drive.PID.kTimeoutMs);
+
 		// ----------------------------------------------------------
 
 		// Drive system
