@@ -14,7 +14,8 @@ import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 
 import com.ctre.phoenix.motorcontrol.ControlMode;
 import com.ctre.phoenix.motorcontrol.NeutralMode;
-import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
+// import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
+import com.ctre.phoenix.motorcontrol.can.WPI_TalonFX;
 
 import frc.robot.Constants;
 import frc.robot.RobotContainer;
@@ -23,10 +24,10 @@ import frc.robot.teamlibraries.DriveInputPipeline;
 
 
 public class DriveSubsystem extends SubsystemBase {
-	private WPI_TalonSRX leftDriveMotorA;
-	private WPI_TalonSRX leftDriveMotorB;
-	private WPI_TalonSRX rightDriveMotorA;
-	private WPI_TalonSRX rightDriveMotorB;
+	private WPI_TalonFX leftDriveMotorA;
+	private WPI_TalonFX leftDriveMotorB;
+	private WPI_TalonFX rightDriveMotorA;
+	private WPI_TalonFX rightDriveMotorB;
 
 	private Encoder leftDriveEncoder;
 	private Encoder rightDriveEncoder;
@@ -38,10 +39,10 @@ public class DriveSubsystem extends SubsystemBase {
 
 	public DriveSubsystem() {
 		// Drive Motors
-		leftDriveMotorA = new WPI_TalonSRX(Constants.Drive.LEFT_A_TALON_SRX_ID);
-		leftDriveMotorB = new WPI_TalonSRX(Constants.Drive.LEFT_B_TALON_SRX_ID);
-		rightDriveMotorA = new WPI_TalonSRX(Constants.Drive.RIGHT_A_TALON_SRX_ID);
-		rightDriveMotorB = new WPI_TalonSRX(Constants.Drive.RIGHT_B_TALON_SRX_ID);
+		leftDriveMotorA = new WPI_TalonFX(Constants.Drive.LEFT_A_TALON_FX_ID);
+		leftDriveMotorB = new WPI_TalonFX(Constants.Drive.LEFT_B_TALON_FX_ID);
+		rightDriveMotorA = new WPI_TalonFX(Constants.Drive.RIGHT_A_TALON_FX_ID);
+		rightDriveMotorB = new WPI_TalonFX(Constants.Drive.RIGHT_B_TALON_FX_ID);
 
 		leftDriveMotorB.follow(leftDriveMotorA);
 		rightDriveMotorB.follow(rightDriveMotorA);

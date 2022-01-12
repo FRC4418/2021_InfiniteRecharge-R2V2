@@ -137,10 +137,10 @@ public final class Constants {
 
 	public static class Drive {
 		public static final int
-			LEFT_A_TALON_SRX_ID = 10,
-			LEFT_B_TALON_SRX_ID = 2,
-			RIGHT_A_TALON_SRX_ID = 6,
-			RIGHT_B_TALON_SRX_ID = 5;
+			LEFT_A_TALON_FX_ID = 1,
+			LEFT_B_TALON_FX_ID = 2,
+			RIGHT_A_TALON_FX_ID = 3,
+			RIGHT_B_TALON_FX_ID = 4;
 
 			// LEFT_ENCODER_CHANNELA_ID = 6,
 			// LEFT_ENCODER_CHANNELB_ID = 7,
