@@ -81,6 +81,8 @@ public class DriveSubsystem extends SubsystemBase {
 
 		robotDrive = new DifferentialDrive(leftDriveMotorA, rightDriveMotorA);
 
+		robotDrive.setMaxOutput(0.5d);
+
 		// ----------------------------------------------------------
 
 		// Encoders
