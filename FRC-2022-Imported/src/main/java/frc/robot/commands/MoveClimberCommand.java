@@ -22,12 +22,13 @@ public class MoveClimberCommand extends CommandBase {
 	}
 
 	// Called when the command is initially scheduled.
+	// Broke for FLL
 	@Override
 	public void initialize() {
 		if (extendingClimber) {
-			RobotContainer.climbSubsystem.setClimbMotor(-0.8 * TeleopSensitivitySubsystem.moveClimberInputRate);
+			RobotContainer.climbSubsystem.setClimbMotor(0.0 * TeleopSensitivitySubsystem.moveClimberInputRate);
 		} else {
-			RobotContainer.climbSubsystem.setClimbMotor(0.8 * TeleopSensitivitySubsystem.moveClimberInputRate);
+			RobotContainer.climbSubsystem.setClimbMotor(0.0 * TeleopSensitivitySubsystem.moveClimberInputRate);
 		}
 	}
 
