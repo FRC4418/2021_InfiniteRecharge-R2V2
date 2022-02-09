@@ -51,7 +51,7 @@ public class DriveSubsystem extends SubsystemBase {
 
 		/* [3] flip values so robot moves forward when stick-forward/LEDs-green */
         leftDriveMotorA.setInverted(TalonFXInvertType.CounterClockwise); // !< Update this
-        rightDriveMotorA.setInverted(TalonFXInvertType.CounterClockwise); // !< Update this
+        rightDriveMotorA.setInverted(TalonFXInvertType.Clockwise); // !< Update this
 
         /*
          * set the invert of the followers to match their respective master controllers
