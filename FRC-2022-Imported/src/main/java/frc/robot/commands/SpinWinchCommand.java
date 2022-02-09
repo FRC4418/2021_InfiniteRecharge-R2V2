@@ -25,9 +25,9 @@ public class SpinWinchCommand extends CommandBase {
 	@Override
 	public void initialize() {
 		if (spooling) {
-			RobotContainer.winchSubsystem.setWinchMotor(-0.6 * TeleopSensitivitySubsystem.spinControlPanelInputRate);
+			RobotContainer.winchSubsystem.setWinchMotor(-0.0 * TeleopSensitivitySubsystem.spinControlPanelInputRate);
 		} else {
-			RobotContainer.winchSubsystem.setWinchMotor(0.6 * TeleopSensitivitySubsystem.spinControlPanelInputRate);
+			RobotContainer.winchSubsystem.setWinchMotor(0.0 * TeleopSensitivitySubsystem.spinControlPanelInputRate);
 		}
 	}
 
