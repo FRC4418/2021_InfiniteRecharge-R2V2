@@ -137,9 +137,9 @@ public final class Constants {
 
 	public static class Drive {
 		public static final int
-			LEFT_A_TALON_FX_ID = 10,
+			LEFT_A_TALON_FX_ID = 3,
 			LEFT_B_TALON_FX_ID = 2,
-			RIGHT_A_TALON_FX_ID = 6,
+			RIGHT_A_TALON_FX_ID = 4,
 			RIGHT_B_TALON_FX_ID = 5;
 
 			// LEFT_ENCODER_CHANNELA_ID = 6,
@@ -192,8 +192,11 @@ public final class Constants {
 
 	public static class Manipulator {
 		public static final int
-			WRIST_FIRE_TALONSRX_ID = 3,
+			//wrist = high
+			WRIST_FIRE_TALONSRX_ID = 15,
+			//elbow = inner shooter
 			ELBOW_FIRE_TALONSRX_ID = 1,
+			//shoulder = inner intake
 			SHOULDER_FIRE_TALONSRX_ID = 11,
 
 			BOTTOM_INTAKE_TALONSRX_ID = 8;
@@ -221,7 +224,7 @@ public final class Constants {
 
 	public static class Winch {
 		public static final int
-			TALONFX_ID = 12;
+			TALONFX_ID = 20;
 	}
 
 	public static class ControlPanel {
